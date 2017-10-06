@@ -23,10 +23,12 @@ public class CardGenerator
 			String question = QandA.nextLine();
 			System.out.println("Great! and what would be the answer to that question?");
 			String answer = QandA.nextLine();
+			System.out.println("What category does this question go under?");
+			String category = QandA.nextLine();
 			System.out.println("On a scale from 1 to 10 how difficult is this question?");
 			Scanner input = new Scanner(System.in);
 			int difficulty = input.nextInt();
-			Quizzer.questions.add(new FlashCard(question, answer, difficulty));
+			Quizzer.questions.add(new FlashCard(question, answer, difficulty, category));
 			System.out.println();
 		}
 		Quizzer.quiz();

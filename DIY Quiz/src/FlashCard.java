@@ -4,12 +4,24 @@ public class FlashCard
 	String question;
 	String answer;
 	int difficulty;
-	public FlashCard(String ques, String ans, int d)
+	String category;
+	public FlashCard(String ques, String ans, int d, String c)
 	{
 		question = ques;
 		answer = ans;
 		difficulty = d;
+		category = c;
 	}
+
+	public String getCategory()
+		{
+			return category;
+		}
+
+	public void setCategory(String category)
+		{
+			this.category = category;
+		}
 
 	public int getDifficulty()
 		{
